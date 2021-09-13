@@ -85,8 +85,14 @@
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
     <Compile Include="Model.cs" />
+    <Compile Include="OutModel.cs" />
+    <Compile Include="Services\BulkPostcodeService.cs" />
+    <Compile Include="Services\OutPostcodeService.cs" />
     <Compile Include="Services\SinglePostcodeService.cs" />
-    <Compile Include="Tests\WhenTheSinglePostcodeServiceIsCalledWithValidPostCode.cs" />
+    <Compile Include="Test - Sad Path\WhenTheSinglePostcodeServiceIsCalledWithInvalidPostcode.cs" />
+    <Compile Include="Tests - Happy Path\WhenTheBulkPostcodeServiceIsCalledWithValidPostCodes.cs" />
+    <Compile Include="Tests - Happy Path\WhenTheOutPostcodeServiceIsCalledWithValidOutwardCode.cs" />
+    <Compile Include="Tests - Happy Path\WhenTheSinglePostcodeServiceIsCalledWithValidPostCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
