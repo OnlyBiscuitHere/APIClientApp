@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APITestApp.PostcodesIOService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace APIClientApp
 {
 
-    public class OutCodeResponse
+    public class OutCodeResponse : IResponse
     {
         public int status { get; set; }
         public OutCodeResult result { get; set; }

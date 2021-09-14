@@ -84,11 +84,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigReader.cs" />
-    <Compile Include="Model.cs" />
-    <Compile Include="OutModel.cs" />
-    <Compile Include="Services\BulkPostcodeService.cs" />
-    <Compile Include="Services\OutPostcodeService.cs" />
-    <Compile Include="Services\SinglePostcodeService.cs" />
+    <Compile Include="PostcodesIOService\DataHandling\DTO.cs" />
+    <Compile Include="PostcodesIOService\DataHandling\IResponse.cs" />
+    <Compile Include="PostcodesIOService\DataHandling\Model.cs" />
+    <Compile Include="PostcodesIOService\DataHandling\OutModel.cs" />
+    <Compile Include="PostcodesIOService\BulkPostcodeService.cs" />
+    <Compile Include="PostcodesIOService\HTTPManager\CallManager.cs" />
+    <Compile Include="PostcodesIOService\OutPostcodeService.cs" />
+    <Compile Include="PostcodesIOService\SinglePostcodeService.cs" />
     <Compile Include="Test - Sad Path\WhenTheSinglePostcodeServiceIsCalledWithInvalidPostcode.cs" />
     <Compile Include="Tests - Happy Path\WhenTheBulkPostcodeServiceIsCalledWithValidPostCodes.cs" />
     <Compile Include="Tests - Happy Path\WhenTheOutPostcodeServiceIsCalledWithValidOutwardCode.cs" />
